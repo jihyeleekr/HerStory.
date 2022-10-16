@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kanit:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bigger-font: 60px;
+    --big-font: 40px;
+    --normal-font: 25px;
+    --small-font: 15px;
+    --smaller-font: 13px;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    padding: 10px;
+}
+h1{
+    font-size: var(--big-font);
+}
+.nav_bar {
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav_bar ul li{
+    list-style: none;
+}
+  
+.nav_bar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom:0;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+} 
+
+.nav_item_r{
+    float:right;
+}
+
+.nav_bar a:hover {
+    border-bottom: 3px solid rgb(147, 125, 194);
+}
+
+.title{
+    text-align: center;
+}
+#what{
+    margin-top: 5%;
+    background-image: url("/assets/right_main_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    height:500px;
+    border: 3px solid rgb(210, 218, 255);
+}
+.context{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+}
+.context video{
+    width: 540px;
+    height: 600px;
+    float:left;
+    margin-left: 80px;
+}
+
+.context .text{
+    margin-top: 100px;
+    float:right;
+    width: 550px;
+    margin-right:100px;
+    padding: 10px;
+}
+.title2{
+    text-align: center;
+}
+
+#why{
+    margin-top: 50%;
+    background-color: rgb(177, 178, 255);
+}
+
+#why .reason{
+    letter-spacing: 0.1em;
+    padding-left: 30px;
+    padding-top:10px;
+}
+
+#why .source{
+    text-align: center;
+    background-color: rgb(210, 218, 255);
+}

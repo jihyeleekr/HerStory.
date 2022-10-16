@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kanit:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bigger-font: 60px;
+    --big-font: 40px;
+    --normal-font: 25px;
+    --small-font: 15px;
+    --smaller-font: 13px;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    padding: 10px;
+}
+h1{
+    font-size: var(--big-font);
+}
+.nav_bar {
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav_bar ul li{
+    list-style: none;
+}
+  
+.nav_bar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom:0;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+} 
+
+.nav_item_r{
+    float:right;
+}
+
+.nav_bar a:hover {
+    border-bottom: 3px solid rgb(147, 125, 194);
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color:rgb(100, 92, 170);
+}
+
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin:0 auto;
+    position:relative;
+}
+
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: rgb(191, 172, 224);
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+
+.timeline ul li:last-child{
+    margin-bottom:0;
+}
+
+.timeline-content{
+    font-size:25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-contnet p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.timeline-content .date{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+
+}
+@media only screen and (min-width: 760px) {
+    .timeline::before{
+        content: ' ';
+        position: absolute;
+        height:100%;
+        width: 2px;
+        left:50%;
+        transform: translateX(-50%);
+        background-color:rgb(210, 218, 255);
+    }
+
+    .timeline ul li{
+        width:50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 10px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+        float:right;
+        clear:left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::after{
+        content:' ';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color:rgb(210, 218, 255);
+        border-radius: 50%;
+        top:0;  
+    }
+    .timeline ul li:nth-child(odd)::after{
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+    .timeline ul li:nth-child(even)::after{
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+    .timeline ul li:hover:after{
+        background-color:rgb(135, 88, 255) ;
+    }
+    .timeline-content .date{
+        position: absolute;
+        top: -30px;
+    }
+}
+
+.soruce{
+    text-align: center;
+    background-color:rgb(100, 92, 170);
+}

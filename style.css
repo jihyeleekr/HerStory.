@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kanit:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bigger-font: 60px;
+    --big-font: 40px;
+    --normal-font: 25px;
+    --small-font: 15px;
+    --smaller-font: 13px;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 10px;
+}
+h1{
+    font-size: var(--big-font);
+}
+.nav_bar {
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav_bar ul li{
+    list-style: none;
+}
+  
+.nav_bar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom:0;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+} 
+
+.nav_item_r{
+    float:right;
+}
+
+.nav_bar a:hover {
+    border-bottom: 3px solid rgb(147, 125, 194);
+}
+
+
+/*       Home      */
+.home{
+    justify-content: space-between;
+    align-items: center;
+    z-index:2;
+    position: flex;
+    right:0;
+    padding:100px;
+    width:100%;
+    min-height:100vh;
+}
+
+.home video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+
+}
+
+.text{
+    z-index: 10;
+    position: relative;
+    margin-left: 60%;
+    margin-top: 15%;
+}
+
+
+
